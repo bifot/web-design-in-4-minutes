@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Web Design in 4 minutes</title>
+    <title>Веб-дизайн за 4 минуты</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta property="og:url" content="http://bifot.ru/web-design-in-4-minutes/">
+    <meta property="og:title" content="Веб-дизайн за 4 минуты">
+    <meta property="og:description" content="Научись основам веб-дизайна на живых примерах всего за 4 минуты. Полностью на русском, ни слова по-английски!">
+    <meta property="og:image:type" content="image/png">
+    <meta name="twitter:site" content="@bifotofficial">
+    <meta name="twitter:creator" content="@bifotofficial">
+    <meta name="twitter:title" content="Web Design in 4 minutes">
+    <meta name="twitter:description" content="Научись основам веб-дизайна на живых примерах всего за 4 минуты. Полностью на русском, ни слова по-английски!">
+    <meta name="twitter:image" content="http://jgthms.com/web-design-in-4-minutes/web-design-in-4-minutes.png">
+    <link rel="stylesheet" type="text/css" href="website.css">
   </head>
   <body>
+  <div style="opacity: 0; position: absolute; left:-9999px;top:-9999px;">
+            <!--LiveInternet counter--><script type="text/javascript"><!--
+        document.write("<a href='//www.liveinternet.ru/click' "+
+        "target=_blank><img src='//counter.yadro.ru/hit?t44.1;r"+
+        escape(document.referrer)+((typeof(screen)=="undefined")?"":
+        ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+        screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+        ";"+Math.random()+
+        "' alt='' title='LiveInternet' "+
+        "border='0' width='31' height='31'><\/a>")
+        //--></script><!--/LiveInternet-->
+          </div>
     <header id="header">
-      <img id="logo" src="web-design-in-4-minutes.png" alt="JT logo">
-      <h1>Web Design in 4 minutes</h1>
+      <img id="logo" src="jt.png" alt="JT logo">
+      <h1>Веб-дизайн за 4 минуты</h1>
       <p>
-        <a href="http://jgthms.com" target="_blank">by Jeremy Thomas</a>
+        <a href="http://jgthms.com" target="_blank">Jeremy Thomas</a> / <a href="http://bifot.ru/" target="_blank">Михаил Семин</a>
       </p>
     </header>
 
     <main>
       <section id="start">
-        <p>Let's say you have a product, a portfolio, or just an idea you want to share with everyone on your <em>own</em> website. Before you publish it on the internet, you want to make it look attractive, professional, or at least <em>decent</em> to look at.</p>
-        <p>What is the <a href="#content">first thing</a> you need to work on?</p>
+        <p>
+          Предположим, что у вас есть продукт, портфолио или просто идея, которой вы хотите поделиться со всеми на своем сайте. Перед тем, как опубликовать продукт в интернет, его нужно сделать максимально привлекательным и красивым, или, хотя бы, <em>прилично</em> выглядившим.
+    </p>
+        <p><a class="step" data-step="0" href="#content">Первый шаг</a>, который мы обязательно должны сделать в процессе создания сайта.</p>
       </section>
 
       <section id="content">
-        <h2>Content</h2>
-        <p>The purpose of <strong>design</strong> is to enhance the presentation of the content it's applied to. It might sound obvious, but content being the <strong>primary</strong> element of a website, it should not be established as an afterthought.</p>
-        <p>Written content, like the paragraph you're currently reading, makes up for more than 90% of the Web. Styling this textual content will go a long way.</p>
-        <p>Let's assume you've already finalised the content you want to publish and just created an empty <code>style.css</code> file, what is the <a href="#centering">first rule</a> you can write?</p>
+        <h2>Контент</h2>
+        <p>
+          Основная цель <strong>дизайна</strong> — расширить представления о контенте. Это может показаться очевидным, но контент — наиболее <strong>важный</strong> элемент на сайте.
+        </p>
+        <p>
+          Давайте представим, что вы уже завершили работу по написанию контента, и только что создали пустой CSS-файл <code>style.css</code>. Что в нем нужно прописать <a class="step" data-step="1" href="#centering">первым делом</a>?
+        </p>
       </section>
 
       <section id="centering">
-        <h2>Centering</h2>
-        <p>Long lines of text can be hard to parse, and thus hard to <strong>read</strong>. Setting a limit of characters per line greatly enhances the readability and appeal of a wall of text.</p>
+        <h2>Центрирование</h2>
+        <p>
+          Очевидно, что длинные строчки на всю страницу <strong>читать</strong> тяжело. Если мы расположим текст по центру и ограничим его ширину, то мы повысим читаемость и привлекательность контента.
+        </p>
 <pre><span class="selector">body</span> {
   <span class="attribute">margin</span>: <span class="number">0</span> auto;
   <span class="attribute">max-width</span>: <span class="number">50</span><span class="unit">em</span>;
 }</pre>
-        <p>After styling the text <em>blocks</em>, what about styling the <a href="#font-family">text itself</a>?</p>
+        <p>После центрирования <em>блока</em> с текстом, нам необходимо <a class="step" data-step="2" href="#font-family">оформить сам текст</a>.</p>
       </section>
 
       <section id="font-family">
-        <h2>Font family</h2>
-        <p>The browser's font defaults to <code>"Times"</code>, which can look unappealing (mostly because it is the "unstyled" font). Switching to a <strong>sans-serif</strong> font like <code>"Helvetica"</code> or <code>"Arial"</code> can vastly improve the look of your page.</p>
+        <h2>Шрифт</h2>
+        <p>
+          По умолчанию в браузер стоит шрифт <code>«Times»</code>, который выглядит крайне непривлекательно и ужасно (разумеется, не всегда). Изменения <strong>шрифта</strong> сразу же приукрасит вашу страницу.
+        </p>
 <pre><span class="selector">body</span> {
   <span class="attribute">font-family</span>: <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
 }</pre>
-        <p><em>If you want to stick with a serif font, try <code>"Georgia"</code>.</em></p>
-        <p>While this makes the text more <em>appealing</em>, let's also make it <a href="#spacing">more readable</a>.</p>
+    <p>Если вы хотите использовать шрифт с засечками, можете попробовать шрифт <code>«Georgia»</code>.</p>
+    <p>Когда мы сделали текст более привлекательным, необходимо сделать еще его и <a class="step" data-step="3" href="#spacing">хорошо читаемым</a>.</p>
       </section>
 
       <section id="spacing">
-        <h2>Spacing</h2>
-        <p>When a page looks "broken" to a user, it's usually a <strong>spacing</strong> issue. Providing space both <em>around</em> and <em>within</em> your content can increase the appeal of your page.</p>
+        <h2>Отступы</h2>
+        <p>
+          Когда страница кажется пользователю «сломанной», то чаще всего проблема именно в <strong>отступах</strong>. Правильные отступы обеспечивают пространство как <em>вокруг</em>, так и <em>внутри</em> вашего контента, делая его более читабельным и привлекательным.
+        </p>
 <pre><span class="selector">body</span> {
   <span class="attribute">line-height</span>: <span class="number">1.5</span>;
   <span class="attribute">padding</span>: <span class="number">4</span><span class="unit">em</span> <span class="number">1</span><span class="unit">em</span>;
@@ -59,27 +92,28 @@
   <span class="attribute">margin-top</span>: <span class="number">1</span><span class="unit">em</span>;
   <span class="attribute">padding-top</span>: <span class="number">1</span><span class="unit">em</span>;
 }</pre>
-        <p>While the layout has greatly improved so far, let's apply more <a href="#color-contrast">subtle changes</a>.</p>
+    <p>Мы сильно изменили наш веб-сайт, давайте теперь разберем более <a class="step" data-step="4" href="#color-contrast">тонкие детали</a>.</p>
       </section>
 
       <section id="color-contrast">
-        <h2>Color &amp; contrast</h2>
-        <p>Black text on a white background can be harsh on the eyes. Opting for a softer shade of black for body text makes the page more <strong>comfortable</strong> to read.</p>
+        <h2>Цвета &amp; контраст</h2>
+        <p>Черный текст на белом фоне может не очень понравиться вашим глазам. Выбирая более мягкий оттенок черного, страница становится более <strong>комфортной</strong> для ваших глаз и чтения в целом.
+</p>
 <pre><span class="selector">body</span> {
   <span class="attribute">color</span>: <span class="number">#555</span>;
 }</pre>
-        <p>And in order to keep a decent level of <strong>contrast</strong>, let's pick a darker shade for <strong>important</strong> words</p>
+        <p>Сохраняя правильный уровень <strong>контраста</strong>, необходимо выбрать оттенок темнее для <strong>важных</strong> слов (заголовков, текста жирного начертания).</p>
 <pre><span class="selector">h1</span>,
 <span class="selector">h2</span>,
 <span class="selector">strong</span> {
   <span class="attribute">color</span>: <span class="number">#333</span>;
 }</pre>
-        <p>While most of the page has been improved visually, some elements (like the code snippets) still seem <a href="#balance">out of place</a>.</p>
+        <p>Наконец-то большая часть страница стала хорошо выглядеть, однако некоторые элементы (к примеру, фрагмент кода) <a class="step" data-step="5" href="#balance">выглядят неуместно</a>.</p>
       </section>
 
       <section id="balance">
-        <h2>Balance</h2>
-        <p>It only takes a few additional touches to correct the balance of the page:</p>
+        <h2>Баланс</h2>
+        <p>Написав пару строчек в style.css, мы добавляем баланса нашей странице:</p>
 <pre><span class="selector">code</span>,
 <span class="selector">pre</span> {
   <span class="attribute">background</span>: <span class="number">#eee</span>;
@@ -93,21 +127,21 @@
 <span class="selector">pre</span> {
   <span class="attribute">padding</span>: <span class="number">1</span>em;
 }</pre>
-        <p>At this point, you might want to make your page stand out and give it <a href="#primary-color">identity</a>.</p>
+        <p>На этом этапе, думаю, вы хотите выделить вашу страницу и <a class="step" data-step="6" href="#primary-color">придать ей индивидуальности</a>.</p>
       </section>
 
       <section id="primary-color">
-        <h2>Primary color</h2>
-        <p>Most brands have a <strong>primary color</strong> that acts as a visual accent. On a website, this accent can be used to provide emphasis on interactive elements, like <strong>links</strong>.</p>
+        <h2>Основной цвет</h2>
+        <p>У большинства сайтов имеется <strong>основной цвет</strong>, который необходим для визуального акцента. Этот акцент может быть использован, например, для выделения <strong>ссылок</strong>.</p>
 <pre><span class="selector">a</span> {
   <span class="attribute">color</span>: <span class="number">#e81c4f</span>;
 }</pre>
-        <p>But to keep the balance, we will need some <a href="#secondary-colors">additional colors</a>.</p>
+        <p>Но для сохранения баланса необходимо будет добавить еще несколько <a class="step" data-step="7" href="#secondary-colors">дополнительных цветов</a>.</p>
       </section>
 
       <section id="secondary-colors">
-        <h2>Secondary colors</h2>
-        <p>The accent color can be complemented with more <em>subtle</em> shades, to be used on borders, backgrounds, or even the body text.</p>
+        <h2>Вторичные цвета</h2>
+        <p>Цветовой акцент может быть дополнен более <em>нежными</em> оттенками, которые будут использоваться для обводки, фона или даже основного текста.</p>
 <pre><span class="selector">body</span> {
   <span class="attribute">color</span>: <span class="number">#566b78</span>;
 }
@@ -122,27 +156,31 @@
 <span class="selector">pre</span> {
   <span class="attribute">border-left</span>: <span class="number">2</span><span class="unit">px</span> solid <span class="number">#69c</span>;
 }</pre>
-        <p>Having changed the shades, why not change the <a href="#custom-font">shapes</a>...</p>
+        <p>Изменив оттенки, почему бы не <a class="step" data-step="8" href="#custom-font">изменить облик</a> всей страницы...</p>
       </section>
 
       <section id="custom-font">
-        <h2>Custom font</h2>
-        <p>Since text is the main content of a webpage, using a <strong>custom font</strong> gives the page even more noticeable identity.</p>
-        <p>While you can embed your own webfont or use an online service like <a href="https://typekit.com" target="_blank">Typekit</a>, let's use <code>"Roboto"</code> from the free <a href="https://fonts.google.com" target="_blank">Google Fonts</a> service:</p>
+        <h2>Пользовательский шрифт</h2>
+        <p>Как говорилось ранее, контент является важнейшей частью веб-страницы, поэтому, используя <strong>пользовательский шрифт</strong>, мы добавим уникальность вашему сайту.</p>
+        <p>Используя онлайн-сервисы (например, <a href="https://typekit.com" target="_blank">Typekit</a>), можно «играться со шрифтами». Предлагаю использовать шрифт <code>«Roboto»</code> из сервиса <a href="https://fonts.google.com" target="_blank">Google Fonts</a>:</p>
 <pre><span class="keyword">@import</span> <span class="string">'https://fonts.googleapis.com/css?family=Roboto:300,400,500'</span>;
 
 <span class="selector">body</span> {
   <span class="attribute">font-family</span>: <span class="string">"Roboto"</span>, <span class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
 }</pre>
-        <p>After enhancing your identity through <em>text</em>, how about adding a <a href="#images">thousand words</a>...</p>
+        <p>После того, как мы уникализировали свою веб-страницу, как насчет того, чтобы добавить еще <a class="step" data-step="9" href="#images">тысячу элементов</a>...</p>
       </section>
 
       <section id="images">
         <h2>
-          <img src="images.png" alt="Spongebob rainbow meme saying 'Images'">
+          <img src="images.png" alt="Спанч Боб радуга мем говорит 'images'">
         </h2>
-        <p>Graphics and icons can be used either as ornaments to support your content, or actively take part in the message you want to convey.</p>
-        <p>Let's enhance our header with a nice <strong>background image</strong> from <a href="https://unsplash.com/photos/qH36EgNjPJY" target="_blank">Unsplash</a></p>
+        <p>
+          Различная графика и иконки могут использоваться в качестве украшений для поддержки вашего контента, или привлекать внимание в сообщении, которое вы хотите передать пользователю.
+        </p>
+        <p>
+          Давайте украсим наш header с помощью красивого <strong>изображения</strong> из сервиса <a href="https://unsplash.com/photos/qH36EgNjPJY" target="_blank">Unsplash</a>.
+        </p>
 <pre><span class="selector">header</span> {
   <span class="attribute">background-color</span>: <span class="number">#263d36</span>;
   <span class="attribute">background-image</span>: url(<span class="string">"header.jpg"</span>);
@@ -153,14 +191,14 @@
   <span class="attribute">padding</span>: <span class="number">10</span><span class="unit">vw</span> <span class="number">2</span><span class="unit">em</span>;
   <span class="attribute">text-align</span>: center;
 }</pre>
-        <p>Let's also add a <strong>logo</strong></p>
+        <p>Еще можно добавить <strong>логотип</strong>.</p>
 <pre><span class="selector">header img</span> {
   <span class="attribute">display</span>: inline-block;
   <span class="attribute">height</span>: <span class="number">120</span><span class="unit">px</span>;
   <span class="attribute">vertical-align</span>: top;
   <span class="attribute">width</span>: <span class="number">120</span><span class="unit">px</span>;
 }</pre>
-        <p>Let's take that opportunity to enhance the text styles.</p>
+        <p>Не будем упускать возможность прибавить уникальности и стилей для нашего текста.</p>
 <pre><span class="selector">header h1</span> {
   <span class="attribute">color</span>: white;
   <span class="attribute">font-size</span>: <span class="number">2.5</span><span class="unit">em</span>;
@@ -184,89 +222,106 @@
   <span class="attribute">background</span>:  <span class="number">#e81c4f</span>;
   <span class="attribute">color</span>: white;
 }</pre>
-        <p><a href="#header">And voil&agrave;</a>!</p>
-        <p>We've designed a decent page in just a few minutes, following basic principles of web design. There's only <a href="#share">one last thing</a> left to do...</p>
+        <p><a href="#header">Вуаля!</a></p>
+        <p>Мы разработали достойную страницу за несколько минут, соблюдая основные принципы веб-дизайна. Остается сделать только <a class="step" data-step="10" href="#share">одну вещь</a>...</p>
       </section>
 
       <section id="share">
-        <h2>Share the love!</h2>
+        <h2>Поделись с друзьями</h2>
         <nav class="buttons">
           <a class="button github" href="https://github.com/jgthms/web-design-in-4-minutes" target="_blank">
-            <em>Download on</em> <strong>GitHub</strong>
+            <em>Скачать на</em> <strong>GitHub</strong>
           </a>
           <a
             class="button facebook"
-            href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fjgthms.com%2Fweb-design-in-4-minutes%2F"
+            href="http://www.facebook.com/sharer.php?u=http://bifot.ru/web-design-in-4-minutes/"
             rel="nofollow"
             target="_blank"
             >
-            <em>Share on</em> <strong>Facebook</strong>
+            <em>Поделиться на</em> <strong>Facebook</strong>
           </a>
           <a
             class="button twitter"
             data-social-network="Twitter"
             data-social-action="tweet"
-            data-social-target="http://jgthms.com/web-design-in-4-minutes/"
-            href="https://twitter.com/intent/tweet?text=Web%20Design%20in%204%20minutes&url=http%3A%2F%2Fjgthms.com%2Fweb-design-in-4-minutes%2F&via=jgthms"
+            data-social-target="http://bifot.ru/web-design-in-4-minutes/"
+            href="https://twitter.com/intent/tweet?text=Веб-дизайн%20за%204%20минуты&url=http://bifot.ru/web-design-in-4-minutes/&via=bifotofficial"
             rel="nofollow"
             target="_blank"
             >
-            <em>Share on</em> <strong>Twitter</strong>
+            <em>Поделиться на</em> <strong>Twitter</strong>
           </a>
         </nav>
-        <h2>Learn how to design with code!</h2>
-        <p>
-          Here are the resources I wrote to help you learn CSS:
-        </p>
-        <nav class="resources">
-          <a class="resource-marksheet resource" href="http://marksheet.io" target="_blank">
-            <figure class="resource-icon">
-              <img src="marksheet.png" alt="Logo of MarkSheet">
-            </figure>
-            <p>
-              <strong class="resource-name">MarkSheet</strong>
-              my <strong>free tutorial</strong> to learn HTML and CSS
-            </p>
-          </a>
-          <a class="resource-bulma resource" href="http://bulma.io" target="_blank">
-            <figure class="resource-icon">
-              <img src="bulma.png" alt="Logo of Bulma">
-            </figure>
-            <p>
-              <strong class="resource-name">Bulma</strong>
-              my <strong>CSS framework</strong> based on Flexbox, so you can get started right away
-            </p>
-          </a>
-          <a class="resource-css-reference resource" href="http://cssreference.io" target="_blank">
-            <figure class="resource-icon">
-              <img src="css-reference.png" alt="Logo of CSS Reference">
-            </figure>
-            <p>
-              <strong class="resource-name">CSS Reference</strong>
-              my <strong>visual guide</strong> to the most popular CSS properties
-            </p>
-          </a>
-        </nav>
-        <p>Thanks for reading!</p>
+        <p>Если ты хочешь изучать веб-дизайн и дальше, можешь посмотреть <a href="http://marksheet.io" target="_blank"><strong>MarkSheet</strong>, my free HTML and CSS tutorial</a>.<br>
+        Или, если ты хочешь начать прямо сейчас, попробуй <a href="http://bulma.io" target="_blank"><strong>Bulma</strong>, my CSS framework based on Flexbox</a>.</p>
+        <p><em>Разумеется, это все на английском.</em></p>
+        <p>Спасибо за внимание!</p>
+        <p><strong>Переведено <a href="http://bifot.ru/">Михаилом Семиным</a>.</strong></p>
       </section>
 
       <footer>
-        <a class="button" href="https://twitter.com/jgthms" target="_blank">Made by <strong>@jgthms</strong></a>
+        <a class="button" href="https://twitter.com/jgthms" target="_blank">Сделано <strong>@jgthms</strong></a>
       </footer>
     </main>
 
+    <a id="visited" href="#share">Выглядит так, как будто вы уже были здесь. Перепрыгнуть в конец?</a>
+
 <script type="text/javascript">
+var steps = document.querySelectorAll('.step');
+var body = document.querySelector('body');
+var html = document.querySelector('html');
+
+for (var i=0; i < steps.length; i++) {
+  var element = steps[i];
+  element.onclick = function(event) {
+    var number = this.dataset.step;
+    var target = this.href;
+    addStep(number, target);
+  }
+};
+
+function removeVisited() {
+  if (document.getElementById('visited')) {
+    body.removeChild(document.getElementById('visited'));
+  }
+}
+
+function addStep(number, target) {
+  html.className += ' step' + number;
+
+  removeVisited();
+
+  if (target !== '') {
+    var id = target.split('#')[1];
+    document.getElementById(id).className = 'animate';
+  }
+
+  if (number === '7') {
+    loadGoogleFont();
+  }
+}
+
+visited.onclick = function() {
+  loadGoogleFont();
+  for (var i=0; i < 11; i++) {
+    html.className += ' step' + i;
+  }
+  removeVisited();
+}
+
 WebFontConfig = {
   google: {
     families: ['Roboto:300,400,500']
   }
 };
 
-(function(d) {
-  var wf = d.createElement('script'), s = d.scripts[0];
-  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
-  s.parentNode.insertBefore(wf, s);
-})(document);
+function loadGoogleFont() {
+  (function(d) {
+    var wf = d.createElement('script'), s = d.scripts[0];
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+    s.parentNode.insertBefore(wf, s);
+  })(document);
+}
 </script>
   </body>
 </html>
